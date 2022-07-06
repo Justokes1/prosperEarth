@@ -93,6 +93,12 @@ p {
   color: black;
 }
 
+.contact ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
 .form {
   padding: 1rem;
   background-color: #00491f;
@@ -114,6 +120,12 @@ p {
 
 .faqIntro {
   text-align: center;
+}
+
+.questions {
+  margin-top: 1rem;
+  padding: 1rem;
+  max-width: 600px;
 }
 
 /* FOOTER STYLING */
