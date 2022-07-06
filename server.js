@@ -39,6 +39,28 @@ app.listen(port, () => console.log(`listening on port ${port}`));
 
 //Sammies copy and Paste start 
 
+//Connecting to MySQL database. 
+const conn = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: 'password',
+  database: 'hope',
+});
+conn.connect(function (err) {
+  if (err) throw err;
+  console.log('Database is connected successfully !');
+});
+
+//Adding information from HTML Contact form to the MySQL Database
+connection.query('INSERT INTO hope.contact(id, firstName, lastName, email, phone, message) VALUES (?, ?, ?, ?, ?, ?)', (err, rows) => {
+  if (err) {
+    throw err
+  } else {
+    console.log("Data sent");
+    console.log(rows)
+  }
+})
+
 // Storing contact input in contact table
 const userDetails = req.body;
 
@@ -62,3 +84,13 @@ app.get("/", (req, res) => {
     connection.end();
   });
 });
+
+//For 1st Party API 
+app.get('/api/user', async (req, res) => {
+
+})
+
+app.get('/', (req, res) => {
+  res.send('got it')
+})
+module.exports = conn;
