@@ -17,6 +17,9 @@ const indexRouter = require("./src/routes/index");
 app.use("/", indexRouter);
 
 // GET VIEWS
+app.get("/news", (req, res) => {
+  res.render("news");
+});
 app.get("/contact", (req, res) => {
   res.render("contact");
 });
