@@ -79,6 +79,10 @@ p {
   flex-direction: column;
   text-align: center;
   padding: 1rem;
+}
+
+.contactInfo h2,
+.contactInfo p {
   color: black;
 }
 
