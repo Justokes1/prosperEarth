@@ -53,52 +53,46 @@ var connection = mysql.createConnection({
   port: process.env.RDS_PORT,
 });
 
-// connection.connect(function (err) {
-//   if (err) {
-//     console.error("Database connection failed: " + err.stack);
-//     return;
-//   }
-//   console.log("Connected to database.");
-// });
-// connection.end();
-// // conn.connect(function (err) {
-// //   if (err) throw err;
-// //   console.log('Database is connected successfully !');
-// // });
-// //Adding information from HTML Contact form to the MySQL Database
-// connection.query(
-//   "INSERT INTO hope.contact(id, firstName, lastName, email, phone, message) VALUES (?, ?, ?, ?, ?, ?)",
-//   (err, rows) => {
-//     if (err) {
-//       throw err;
-//     } else {
-//       console.log("Data sent");
-//       console.log(rows);
-//     }
-//   }
-// );
-// // Storing contact input in contact table
-// const userDetails = req.body;
-// // Insert data into Contact table
-// var sql = "INSERT INTO hope.contact SET ?";
-// db.query(sql, userDetails, function (err, data) {
+connection.connect(function (err) {
+  if (err) {
+    console.error("Database connection failed: " + err.stack);
+    return;
+  }
+  console.log("Connected to database.");
+});
+connection.end();
+// conn.connect(function (err) {
 //   if (err) throw err;
-//   console.log("Contact data is inserted successfully ");
+//   console.log('Database is connected successfully !');
 // });
-// // redirect to user form page after inserting the data
-// res.redirect("/contact/form");
-// module.exports = router;
-// //Retrieve data from contact input/table and see in console log
-// app.get("/", (req, res) => {
-//   connection.query("SELECT * FROM hope.contact LIMIT 1", (err, rows) => {
-//     if (err) throw err;
-//     console.log("The data from users table are: \n", rows);
-//     connection.end();
-//   });
-// });
-// //For 1st Party API
-// app.get("/api/user", async (req, res) => {});
-// app.get("/", (req, res) => {
-//   res.send("got it");
-// });
-// module.exports = conn;
+//Adding information from HTML Contact form to the MySQL Database
+connection.query(
+  "INSERT INTO hope.contact(id, firstName, lastName, email, phone, message) VALUES (?, ?, ?, ?, ?, ?)",
+  (err, rows) => {
+    if (err) {
+      throw err;
+    } else {
+      console.log("Data sent");
+      console.log(rows);
+    }
+  }
+);
+// Storing contact input in contact table
+const userDetails = req.body;
+// Insert data into Contact table
+var sql = "INSERT INTO hope.contact SET ?";
+db.query(sql, userDetails, function (err, data) {
+  if (err) throw err;
+  console.log("Contact data is inserted successfully ");
+});
+// redirect to user form page after inserting the data
+res.redirect("/contact/form");
+module.exports = router;
+//Retrieve data from contact input/table and see in console log
+app.get("/", (req, res) => {
+  connection.query("SELECT * FROM hope.contact LIMIT 1", (err, rows) => {
+    if (err) throw err;
+    console.log("The data from users table are: \n", rows);
+    connection.end();
+  });
+});
