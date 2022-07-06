@@ -47,6 +47,7 @@ const conn = mysql.createConnection({
   database: "hopeHacks",
   port: 3306,
 });
+
 connection.connect(function (err) {
   if (err) {
     console.error("Database connection failed: " + err.stack);
