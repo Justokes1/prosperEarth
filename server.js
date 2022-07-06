@@ -7,6 +7,7 @@ const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
 const router = express.Router();
 const mysql = require("mysql");
+const materialize = require("materialize-css/sass/materialize.scss");
 
 //USE STATIC FILES
 app.use(express.static("public"));
