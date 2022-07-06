@@ -16,78 +16,66 @@
     <%- include('./partials/header.ejs') %>
   </header>
 
-  <h1> Contact US!</h1>
-  <br>
-  <p> Any questions? Tell us anything!</p>
-  <br>
-  <br>
+  <div class="contactHero"></div>
+
+  <div class="contactIntro">
+    <h1>Contact US</h1>
+
+    <p>Any Questions? Ask us Anything</p>
+  </div>
+
   <section class="contact">
-    <div class="contact-wrapper">
+    <div class="contactInfo">
+      <h2>Contact Information</h2>
 
-      <div class="contact-info">
+      <p>Fill out the form and our team will get back to you in 24 - 48 hours.</p>
 
-        <h2 class="header">Contact Information</h2>
-        <h3 class="sub-header"> Fill up the form and our team will
-          get back to you withing 24 hours.
-        </h3>
+      <ul>
+        <li>
+          <a href="tel:777-777-7777"> <i class="fa-solid fa-phone"> </i>(777)777-7777</a>
+        </li>
 
-        <a href="tel:777-777-7777"> <i class="fa-solid fa-phone">
-          </i>(777)777-7777</a>
+        <li>
+          <a href="mailto:hello@gmail.com"> <i class="fa-solid fa-envelope"></i> planet@gmail.com</a>
+        </li>
 
-        <a href="mailto:hello@gmail.com"> <i class="fa-solid fa-envelope"></i> planet@gmail.com</a>
-        <a
-          href="https://www.google.com/maps/place/Red+Ventures/@35.0061496,-80.8460336,17z/data=!3m1!4b1!4m5!3m4!1s0x8856832c57f0fc87:0xbd566135231a2a0b!8m2!3d35.0065941!4d-80.8459102">
-          <i class="fa-solid fa-location-dot"></i> Red Ventures, Fort Mill </a>
+        <li>
+          <a
+            href="https://www.google.com/maps/place/Red+Ventures/@35.0061496,-80.8460336,17z/data=!3m1!4b1!4m5!3m4!1s0x8856832c57f0fc87:0xbd566135231a2a0b!8m2!3d35.0065941!4d-80.8459102">
+            <i class="fa-solid fa-location-dot"></i> Red Ventures, Fort Mill </a>
+        </li>
+      </ul>
 
-      </div>
+    </div>
 
-      <form class="contact-form">
-        <div class="contact-names">
-          <div class="contact-first-name">
+    <div class="form">
+      <form>
 
-            <label for="name" class="label-name">
-              <span class="content-name"> First Name<span>
-            </label>
-            <input type="name" name="first-name" placeholder="Ananyeli" autocomplete="off" required>
-          </div>
-          <div class="contact-last-name">
-            <label for="name" class="label-last">
-              <span class="content-last">Last Name</span>
-            </label>
-            <input type="last-name" name="last-name" placeholder="Batista" autocomplete="off" required>
-          </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="mail-phone">
-          <div class="contact-email">
-            <label for="email" class="label-email">
-              <span class="content-email">Email</span>
-            </label>
-            <input type="email" name="email" placeholder="ananyeli@hello.com" autocomplete="off" required>
-          </div>
-          <div class="contact-phone">
-            <labe for="phone" class="label-phone">
-              <span class="content-email"> Phone</span>
-              </label>
-              <input type="tel" name="phone" placeholder="#888-888-8888" autocomplete="off" required>
-          </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <div class="form-box">
-          <label for="Message">Message</label>
-          <br>
+        <label for="name" class="label-name">
+          <span class="content-name"> First Name<span>
+        </label>
+        <input type="text" name="first-name" placeholder="Jane" autocomplete="off" required>
 
-          <textarea name="message" placeholder="Write your message here..."> </textarea>
-        </div>
-        <br>
-        <br>
-        <input type="button" value="Send Message" class="right">
+        <label for="name" class="label-last">
+          <span class="content-last">Last Name</span>
+        </label>
+        <input type="text" name="last-name" placeholder="Batista" autocomplete="off" required>
 
+        <label for="email" class="label-email">
+          <span class="content-email">Email</span>
+        </label>
+        <input type="email" name="email" placeholder="ananyeli@hello.com" autocomplete="off" required>
+
+        <label for="phone" class="label-phone">
+          <span class="content-email"> Phone</span>
+        </label>
+        <input type="tel" name="phone" placeholder="#888-888-8888" autocomplete="off" required>
+
+        <label for="Message">Message</label>
+        <textarea name="message" placeholder="Write your message here..."> </textarea>
+
+        <a class="waves-effect waves-light btn black">
+          <i class="material-icons left">send</i>Submit</a>
       </form>
     </div>
   </section>

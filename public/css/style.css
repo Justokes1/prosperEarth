@@ -50,12 +50,34 @@ h2 {
   text-align: center;
 }
 
+/* CONTACT PAGE */
+
+.contactIntro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contactInfo {
+  background-color: #00491f;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+}
+
+.form textarea {
+  height: 150px;
+}
+
 /* FOOTER STYLING */
 footer {
   margin-top: 1rem;
 }
 
-/* LANDING MEDIA QUERYS */
+/* MEDIA QUERYS */
 
 /* at 600px change to 2 grid squares */
 @media (min-width: 600px) {
