@@ -43,7 +43,7 @@ h2 {
   font-size: 2rem;
 }
 
-.newsletter p {
+p {
   font-size: 1.5rem;
   color: white;
 }
@@ -70,7 +70,7 @@ h2 {
 }
 
 .contactInfo {
-  background-color: #00491f;
+  background-color: black;
   display: flex;
   justify-content: center;
   flex-direction: column;
