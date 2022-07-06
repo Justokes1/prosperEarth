@@ -41,16 +41,16 @@ app.listen(port, () => console.log(`listening on port ${port}`));
 //Sammies copy and Paste start
 
 //Connecting to MySQL database.
-const conn = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "password",
-  database: "hope",
-});
-conn.connect(function (err) {
-  if (err) throw err;
-  console.log("Database is connected successfully !");
-});
+// const conn = mysql.createConnection({
+//   host: "localhost",
+//   user: "root",
+//   password: "password",
+//   database: "hope",
+// });
+// conn.connect(function (err) {
+//   if (err) throw err;
+//   console.log("Database is connected successfully !");
+// });
 
 //Adding information from HTML Contact form to the MySQL Database
 // connection.query(
