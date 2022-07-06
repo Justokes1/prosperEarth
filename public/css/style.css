@@ -50,6 +50,9 @@ p {
 
 .intro {
   text-align: center;
+}
+
+.intro p {
   color: black;
 }
 
