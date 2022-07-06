@@ -16,32 +16,83 @@
     <%- include('./partials/header.ejs') %>
   </header>
 
-  <p id=“FAQs”> FAQs </p>
-  <button class=“accordion”>How can I cooperate?</button>
-  <div class=“panel”>
-    <p> You can cooperated by contactin us and do your part to take care of our planet,
-      you can do so by filling out the form above. We will reach out to you! </p>
-  </div>
-  <button class=“accordion”> Is the information provided by us accurate? </button>
-  <div class=“panel”>
-    <p> The information listed on our website is based and supported by
-      the Environmental Potection Agency (EPA). This information is also
-      uptated every 24hrs.
-    </p>
-  </div>
-  <button class=“accordion”>Why should I take care of our planet?</button>
-  <div class=“panel”>
-    <p> Our Earth provides us with everything we want, but also everything we
-      need to survive! Earth provides the food we need for fuel, water we need
-      for hydration, air and the oxygen we breath, raw materials, literally everything
-      we need comes from this one planet</p>
-  </div>
-  <button class=“accordion”>Need to report a problem related to the fucntionality of this app?</button>
-  <div class=“panel”>
-    <p>Please fill out the contact form. Our Chatbot will bring the best
-      digital support.
-    </p>
-  </div>
+  <h1> Contact US!</h1>
+  <br>
+  <p> Any questions? Tell us anything!</p>
+  <br>
+  <br>
+  <section class="contact">
+    <div class="contact-wrapper">
+
+      <div class="contact-info">
+
+        <h2 class="header">Contact Information</h2>
+        <h3 class="sub-header"> Fill up the form and our team will
+          get back to you withing 24 hours.
+        </h3>
+
+        <a href="tel:777-777-7777"> <i class="fa-solid fa-phone">
+          </i>(777)777-7777</a>
+
+        <a href="mailto:hello@gmail.com"> <i class="fa-solid fa-envelope"></i> planet@gmail.com</a>
+        <a
+          href="https://www.google.com/maps/place/Red+Ventures/@35.0061496,-80.8460336,17z/data=!3m1!4b1!4m5!3m4!1s0x8856832c57f0fc87:0xbd566135231a2a0b!8m2!3d35.0065941!4d-80.8459102">
+          <i class="fa-solid fa-location-dot"></i> Red Ventures, Fort Mill </a>
+
+      </div>
+
+      <form class="contact-form">
+        <div class="contact-names">
+          <div class="contact-first-name">
+
+            <label for="name" class="label-name">
+              <span class="content-name"> First Name<span>
+            </label>
+            <input type="name" name="first-name" placeholder="Ananyeli" autocomplete="off" required>
+          </div>
+          <div class="contact-last-name">
+            <label for="name" class="label-last">
+              <span class="content-last">Last Name</span>
+            </label>
+            <input type="last-name" name="last-name" placeholder="Batista" autocomplete="off" required>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="mail-phone">
+          <div class="contact-email">
+            <label for="email" class="label-email">
+              <span class="content-email">Email</span>
+            </label>
+            <input type="email" name="email" placeholder="ananyeli@hello.com" autocomplete="off" required>
+          </div>
+          <div class="contact-phone">
+            <labe for="phone" class="label-phone">
+              <span class="content-email"> Phone</span>
+              </label>
+              <input type="tel" name="phone" placeholder="#888-888-8888" autocomplete="off" required>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="form-box">
+          <label for="Message">Message</label>
+          <br>
+
+          <textarea name="message" placeholder="Write your message here..."> </textarea>
+        </div>
+        <br>
+        <br>
+        <input type="button" value="Send Message" class="right">
+
+      </form>
+    </div>
+  </section>
+
+  <%- include('./partials/footer.ejs') %>
 </body>
 
 </html>
