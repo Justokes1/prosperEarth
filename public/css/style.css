@@ -74,7 +74,6 @@ p {
 }
 
 .contactInfo {
-  background-color: black;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -84,6 +83,7 @@ p {
 
 .form {
   padding: 1rem;
+  background-color: #00491f;
 }
 
 .form textarea {
