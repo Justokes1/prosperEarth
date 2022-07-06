@@ -33,6 +33,7 @@
   background-color: #00491f;
   margin-bottom: 1rem;
   padding: 1rem;
+  max-width: 1200px;
 }
 
 .newsInfo {
