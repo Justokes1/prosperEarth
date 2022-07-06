@@ -42,7 +42,7 @@ app.listen(port, () => console.log(`listening on port ${port}`));
 //Connecting to MySQL database.
 const RDS_HOSTNAME = "hopehacks.cuksc0hxhtzn.us-east-1.rds.amazonaws.com";
 const RDS_PORT = "3306";
-const RDS_DB_NAME = "-";
+const RDS_DB_NAME = "hopehacks";
 const RDS_USERNAME = "root";
 const RDS_PASSWORD = "Sam15276mie";
 
