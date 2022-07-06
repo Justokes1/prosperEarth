@@ -77,22 +77,22 @@ connection.query(
     }
   }
 );
-// Storing contact input in contact table
-const userDetails = req.body;
-// Insert data into Contact table
-var sql = "INSERT INTO hope.contact SET ?";
-db.query(sql, userDetails, function (err, data) {
-  if (err) throw err;
-  console.log("Contact data is inserted successfully ");
-});
-// redirect to user form page after inserting the data
-res.redirect("/contact/form");
-module.exports = router;
-//Retrieve data from contact input/table and see in console log
-app.get("/", (req, res) => {
-  connection.query("SELECT * FROM hope.contact LIMIT 1", (err, rows) => {
-    if (err) throw err;
-    console.log("The data from users table are: \n", rows);
-    connection.end();
-  });
-});
+// // Storing contact input in contact table
+// const userDetails = req.body;
+// // Insert data into Contact table
+// var sql = "INSERT INTO hope.contact SET ?";
+// db.query(sql, userDetails, function (err, data) {
+//   if (err) throw err;
+//   console.log("Contact data is inserted successfully ");
+// });
+// // redirect to user form page after inserting the data
+// res.redirect("/contact/form");
+// module.exports = router;
+// //Retrieve data from contact input/table and see in console log
+// app.get("/", (req, res) => {
+//   connection.query("SELECT * FROM hope.contact LIMIT 1", (err, rows) => {
+//     if (err) throw err;
+//     console.log("The data from users table are: \n", rows);
+//     connection.end();
+//   });
+// });
