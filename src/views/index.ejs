@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Prosper Earth | HOME</title>
+</head>
+
+<body>
+  <header>
+    <%- include('./partials/header.ejs') %>
+  </header>
+
+  <div class="hero"></div>
+
+  <section class="newsletter">
+    <div class="newsInfo">
+      <h2>HELP POWER CHANGE</h2>
+
+      <p>It takes help from people like you to build a more healthy and just world. Learn more about how you can
+        help by
+        subscribing to our newsletter.
+      </p>
+    </div>
+    <div class="newsForm">
+      <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+        <label for="email">E-mail Address</label><br>
+        <input type="text" id="email" name="email">
+
+        <a class="waves-effect waves-light btn black"><i class="material-icons left">event_note</i>Subscribe</a>
+      </form>
+    </div>
+  </section>
+
+  <section class="topPage">
+    <div class="intro">
+      <h3>How We Help</h3>
+      <p>Prosper Earth is an organization that .......Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+        quo
+        consectetur, inventore minus,
+        facere quia perspiciatis libero, asperiores beatae maxime excepturi omnis quas in culpa nisi magnam a
+        numquam
+        reprehenderit?</p>
+
+    </div>
+
+    <div class="intro">
+      <h3>How You Can Help</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, voluptas! Nulla esse
+        vel maxime, voluptatum recusandae aliquam neque amet temporibus magni aperiam quod laboriosam ut
+        consectetur.
+        Odio
+        optio recusandae nesciunt?
+      </p>
+    </div>
+  </section>
+
+  <section class="air">
+    <div class="airImg"></div>
+    <div class="airInfo"></div>
+  </section>
+
+  <footer>
+    <%- include('./partials/footer.ejs') %>
+  </footer>
+
+  <script src="../../public/js/script.js"></script>
+</body>
+
+</html>

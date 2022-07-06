@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* LANDING STYLING */
+
+.hero {
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/soil.jpg);
+}
+
+.topPage,
+.newsletter {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.topPage {
+  padding: 1rem;
+}
+
+.newsletter {
+  background-color: #00491f;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.newsInfo {
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  font-size: 2rem;
+}
+
+.newsletter p {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.intro {
+  text-align: center;
+}
+
+/* FOOTER STYLING */
+footer {
+  margin-top: 1rem;
+}
+
+/* LANDING MEDIA QUERYS */
+
+/* at 600px change to 2 grid squares */
+@media (min-width: 600px) {
+  .topPage,
+  .newsletter {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* CONTACT STYLING */
+
+html {
+  scroll-behavior: smooth;
+}
+.accordion {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#FAQs {
+  text-align: center;
+}
+.panel {
+  padding: 0 18px;
+  /* background-color: white; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  text-align: center;
+}
