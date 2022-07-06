@@ -26,6 +26,7 @@ app.use("/", indexRouter);
 app.get("/news", (req, res) => {
   res.render("news");
 });
+
 app.get("/contact", (req, res) => {
   res.render("contact");
 });
