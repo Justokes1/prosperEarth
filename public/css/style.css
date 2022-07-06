@@ -27,7 +27,8 @@
   padding: 1rem;
 }
 
-.newsletter {
+.newsletter,
+.contactIntro {
   background-color: #00491f;
   margin-bottom: 1rem;
   padding: 1rem;
