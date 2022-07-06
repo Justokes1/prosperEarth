@@ -82,7 +82,7 @@ p {
 
 .contactInfo {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
   text-align: center;
   padding: 1rem;
