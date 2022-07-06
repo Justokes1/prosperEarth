@@ -1,11 +1,11 @@
 // CONNECTION
-const express = require("express");
+// const express = require("express");
 const app = express();
 const port = process.env.PORT || 3000;
 //S addition setting up connection to Database
 const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
-const router = express.Router();
+// const router = express.Router();
 const mysql = require("mysql");
 
 //USE STATIC FILES
