@@ -53,6 +53,14 @@ h2 {
 
 /* CONTACT PAGE */
 
+.contactHero {
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/contact.jpg);
+}
+
 .contactIntro {
   display: flex;
   justify-content: center;
