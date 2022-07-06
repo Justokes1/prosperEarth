@@ -41,15 +41,26 @@ app.listen(port, () => console.log(`listening on port ${port}`));
 
 //Connecting to MySQL database. 
 const conn = mysql.createConnection({
-  host: 'localhost',
+  host: "hopehacks.cuksc0hxhtzn.us - east - 1.rds.amazonaws.com",
   user: 'root',
-  password: 'password',
-  database: 'hope',
+  password: 'Sam15276mie',
+  database: 'hopeHacks',
+  port: 3306,
 });
-conn.connect(function (err) {
-  if (err) throw err;
-  console.log('Database is connected successfully !');
+
+connection.connect(function (err) {
+  if (err) {
+    console.error('Database connection failed: ' + err.stack);
+    return;
+  }
+  console.log('Connected to database.');
 });
+connection.end()
+
+// conn.connect(function (err) {
+//   if (err) throw err;
+//   console.log('Database is connected successfully !');
+// });
 
 //Adding information from HTML Contact form to the MySQL Database
 connection.query('INSERT INTO hope.contact(id, firstName, lastName, email, phone, message) VALUES (?, ?, ?, ?, ?, ?)', (err, rows) => {
