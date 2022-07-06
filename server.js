@@ -66,17 +66,17 @@ connection.end();
 //   console.log('Database is connected successfully !');
 // });
 //Adding information from HTML Contact form to the MySQL Database
-connection.query(
-  "INSERT INTO hope.contact(id, firstName, lastName, email, phone, message) VALUES (?, ?, ?, ?, ?, ?)",
-  (err, rows) => {
-    if (err) {
-      throw err;
-    } else {
-      console.log("Data sent");
-      console.log(rows);
-    }
-  }
-);
+// connection.query(
+//   "INSERT INTO hope.contact(id, firstName, lastName, email, phone, message) VALUES (?, ?, ?, ?, ?, ?)",
+//   (err, rows) => {
+//     if (err) {
+//       throw err;
+//     } else {
+//       console.log("Data sent");
+//       console.log(rows);
+//     }
+//   }
+// );
 // // Storing contact input in contact table
 // const userDetails = req.body;
 // // Insert data into Contact table
