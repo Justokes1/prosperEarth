@@ -82,6 +82,10 @@ p {
   padding: 1rem;
 }
 
+.form {
+  padding: 1rem;
+}
+
 .form textarea {
   height: 150px;
 }
