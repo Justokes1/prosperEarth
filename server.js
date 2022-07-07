@@ -38,6 +38,7 @@ app.get("/faq", (req, res) => {
 // LISTEN ON PORT 3000
 app.listen(port, () => console.log(`listening on port ${port}`));
 
+
 //Sammies copy and Paste start
 //Connecting to MySQL database.
 const RDS_HOSTNAME = "hopehacks.cuksc0hxhtzn.us-east-1.rds.amazonaws.com";
